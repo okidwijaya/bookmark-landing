@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Frontend Mentor | Bookmark landing page</title>
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="css/simple-grid.min.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+
+<body>
+
+  <div class="topnav">
+    <img class="logo" src="/images/logo-bookmark.svg">
+    <ul class="navlist">
+      <li><a>features</a></li>
+      <li><a>contact</a></li>
+      <li><a>pricing</a></li>
+      <li><button class="btn orange">login</button></li>
+    </ul>
+  </div>
+
+  <section>
+    <div class="row one">
+      <div class="col-6 first">
+        <h1> A Simple Bookmark Manager</h1>
+        <p>A clean and simple interface to organize your
+          favorite websites. Open a new browser tab and see your
+          sites load instantly. Try it for free.
+        </p>
+        <button class="btn blue">Get it on Chrome</button>
+        <button class="btn grey">Get in on Firefox</button>
+      </div>
+      <div class="col-6 first-one">
+        <img class="img-hero" src="/images/illustration-hero.svg">
+      </div>
+    </div>
+  </section>
+
+
+  <section class="features">
+    <header>
+      <h2>Features</h2>
+      <p> Our aim is to make it quick and easy for you to access your favourite websites.
+        Your bookmarks sync between your<br>devices so you can access them on the go.
+      </p>
+    </header>
+
+    <div class="car-list">
+      <a href="#es" class="btn car" onclick="currentSlide(1)">Easy Sharing</a>
+      <a href="#sb" class="btn car" onclick="currentSlide(2)">Simple Bookmarking</a>
+      <a href="#ss" class="btn car" onclick="currentSlide(3)">Speddy Searching</a>
+      <hr class="fc">
+    </div>
+
+    <div class="slideshow-container">
+
+      <!-- Full-width images with number and caption text -->
+      <div class="row mySlides fade">
+        <div class="col-6">
+          <img src="/images/illustration-features-tab-1.svg">
+        </div>
+        <div class="col-6 first">
+          <h1> Bookmark in one click</h1>
+          <p> Organize your bookmarks however you like. Our simple drag-and-drop interface
+            gives you complete control over how you manage your favourite sites.</p>
+        </div>
+      </div>
+
+      <div class="row mySlides fade">
+        <div class="col-6">
+          <img src="/images/illustration-features-tab-2.svg">
+        </div>
+        <div class="col-6 first">
+          <h1> Intelligent search</h1>
+          <p> Our powerful search feature will help you find saved sites in no time at all.
+            No need to trawl through all of your bookmarks.
+          </p>
+        </div>
+      </div>
+
+      <div class="row mySlides fade">
+        <div class="col-6">
+          <img src="/images/illustration-features-tab-3.svg">
+        </div>
+        <div class="col-6 first">
+          <h1>Share your bookmarks</h1>
+          <p> Easily share your bookmarks and collections with others. Create a shareable
+            link that you can send at the click of a button.
+          </p>
+        </div>
+      </div>
+  </section>
+
+
+  <section class="extension">
+    <h2> Download the Extension</h2>
+    <p>we've got more browser in the pipeline.
+      Please let us know if<br> yo've got a favourite you'd like us to prioritize.
+    </p>
+    <div class="menu-extension">
+
+      <div class="ex1">
+        <img src="/images/logo-chrome.svg">
+        <h4>Add to Chrome</h4>
+        <p>Minimum version 62</p>
+        <img src="/images/bg-dots.png">
+        <button class="btn blue">Add & Install Extension</button>
+      </div>
+
+      <div class="ex2">
+        <img src="/images/logo-firefox.svg">
+        <h4>Add to Firefox</h4>
+        <p>Minimum version 55</p>
+        <img src="/images/bg-dots.png">
+        <button class="btn blue">Add & Install Extension</button>
+      </div>
+
+      <div class="ex3">
+        <img src="/images/logo-opera.svg">
+        <h4>Add to Opera</h4>
+        <p>Minimum version 46</p>
+        <img src="/images/bg-dots.png">
+        <button class="btn blue">Add & Install Extension</button>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="bottom">
+    <h2>Frequently Asked Question</h2>
+    <p> Here are some of our FAQs. If you have any other questions<br> you’d like
+      answered please feel free to email us.
+    </p>
+
+    <div class="col-bot">
+      <button type="button" class="collapsible">What is Bookmark?</button>
+      <div class="content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.</p>
+      </div>
+      <button type="button" class="collapsible">How can I request a new browser?</button>
+      <div class="content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.</p>
+      </div>
+      <button type="button" class="collapsible">Is there a mobile app?</button>
+      <div class="content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.</p>
+      </div>
+      <button type="button" class="collapsible">What about other Chrominium browsers?</button>
+      <div class="content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.</p>
+      </div>
+
+    </div>
+    <button class="btn blue">More info</button>
+  </section>
+
+  <section>
+    <footer class="footer">
+      <h4>35,000+ already joined</h4>
+      <h1>Stay up-to-date with what <br>we’re doing</h1>
+      <form>
+        <input type="text" id="fname" name="firstname" placeholder="Enter your email Address">
+        <button class="btn last">Contact Us</button>
+      </form>
+    </footer>
+  </section>
+
+  <section>
+    <div class="botnav">
+      <img class="logo" src="/images/logo-bookmark.svg">
+      <a>features</a>
+      <a>contact</a>
+      <a>pricing</a>
+      <ul class="navbot-right">
+        <a><img src="/twitter-brands.svg"></a>
+        <a><img src="/facebook-square-brands.svg"></a>
+      </ul>
+    </div>
+  </section>
+
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {
+        slideIndex = 1
+      }
+      if (n < 1) {
+        slideIndex = slides.length
+      }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+  </script>
+</body>
+
+</html>
